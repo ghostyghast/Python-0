@@ -1,5 +1,6 @@
 import time
 from datetime import datetime
 
-print("Seconds since  since Janurary 1, 1970: {:,.4F} or {:e}".format(time.time(), time.time()))
+print("Seconds since Janurary 1, 1970:", end=' ')
+print("{:,.4f} or {:.2e}".format(time.time(), time.time()))
 print(datetime.now().strftime("%B %d %Y"))
