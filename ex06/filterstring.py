@@ -12,15 +12,12 @@ def correct_arg(string):
     return True
 
 
-def func(x, num):
-    return lambda x, num: True if len(x) > num else False
-
-
 def main():
     assert len(argv) == 3, "invalid argument amount"
     assert argv[2].isalpha, "arguments invalid"
     assert correct_arg(argv[1]), "arguments invalid"
-    print(ft_filter(lambda word, num=int(argv[2]): len(word) > num, argv[1].split()))
+    words = argv[1].split()
+    print(ft_filter(lambda word, num=int(argv[2]): len(word) > num, words))
 
 
 if __name__ == "__main__":
