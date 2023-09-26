@@ -1,0 +1,10 @@
+[project]
+name="ft_package"
+version= '0.0.1'
+description = 'My first and best python package'
+readme='README.md'
+authors=[
+    {name = 'amaligma', email='antoinethebestgamer@gmail.com'}
+]
+[project.urls]
+download_url='https://github.com/ghostyghast/ft_package'
