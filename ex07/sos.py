@@ -2,6 +2,9 @@ from sys import argv
 
 
 def parse(string):
+    """parse(string) --> Bool
+    checks if string contains only alphanumeric
+    chracters"""
     for i in string:
         if i.isalnum() is False and i != ' ':
             return False
@@ -9,6 +12,10 @@ def parse(string):
 
 
 def main():
+    """program that takes a string of alphanumeric characters
+    and prints it back out in morse code.
+    Raise an assertion error if argument amount is not 2 and
+    string contains only alphanum characters """
     assert len(argv) == 2, "invalid argument count"
     assert parse(argv[1]), "invalid string"
     morse = {" ": "/",
