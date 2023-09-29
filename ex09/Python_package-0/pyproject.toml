@@ -6,5 +6,6 @@ readme='README.md'
 authors=[
     {name = 'amaligma', email='antoinethebestgamer@gmail.com'}
 ]
+lisence= {file = './LICENCE'}
 [project.urls]
 download_url='https://github.com/ghostyghast/ft_package'
